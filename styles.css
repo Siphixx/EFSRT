@@ -1,0 +1,530 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+font-family: 'Poppins', sans-serif;
+}
+/* Header */
+.navbar{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+}
+
+.navbar .logo{
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+}
+.navbar{
+    display: flex;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar a{
+color: white;
+margin-left: 60px;
+font-size: 17px;
+font-weight: 600;
+border-bottom: 2px solid     transparent;
+transition: all .55s ease;
+}
+
+.navbar a:hover{
+    border-bottom: 2px solid white;
+}
+#menu-icon{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Header End */
+/* Banner */
+
+.splide__slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
+    opacity: 1;
+}
+
+
+
+.splide__slide{
+        width: 50%;
+        height: auto;
+        max-height: 69vh;
+        margin: 0 auto;
+    
+}
+
+.splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.slide1 img{
+object-position: center;
+}
+
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.slide-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.slide-content p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+
+/* Banner End */
+
+
+/* Animales Rescatados */
+.background-animal{
+    background-color: floralwhite;
+}
+.title-animal{
+    color: #993838;
+    font-size: 42px;
+    text-align: center;
+    padding: 80px;
+    font-weight: 600;
+}
+.container-animal{
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+}
+.animal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-animal{
+    width: 420px;
+    height: 460px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid #fff;
+    position: relative;
+}
+
+.card-img{
+    width: 100%;   
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.card-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #24160169;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.8s;
+}
+.card-animal:hover .card-body{
+    right: 0;
+}   
+.card-title{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.card-subtitle{
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.card-info{
+    font-size: 14px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 300;
+}
+
+.card-btn{
+    color: #993838;
+    width: 120px;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+/* Animales Rescatados End */
+
+/* Equipo */
+.team-container{
+display: grid;
+    place-items: center;
+    margin-left: 13%;
+    margin-right: 13%;
+   
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    
+}
+
+.background-team{
+    background-color: floralwhite;
+}
+
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+    display: grid;
+     place-items: center;
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #fff;
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #993838;
+}
+
+.slide-content2{
+margin: 0 40px;
+}
+
+.card{
+    width: 320px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.image-content, .card-content{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10px 14px;
+}
+
+.image-content{
+row-gap: 5px;
+position: relative;
+row-gap: 5px;
+padding: 10px 14px;
+}
+
+.overlay{
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+background-color: #993838;
+border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after{
+content: '';
+position: absolute;
+right: 0;
+bottom: -40px;
+height: 40px;
+width: 40px;
+background-color: #993838;
+}
+
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #ffffff;
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.description{
+    font-size: 15px;
+    color: #707070;
+    text-align: center;
+}
+
+.button{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    background-color: #993838;
+    color: #fff;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+/* Equipo End */
+
+/* Footer */
+.footer-distributed{
+ background-color: #292424;
+ text-align: left;
+ padding: 50px 50px 60px 50px;
+ widows: 100%;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-distributed .footer-left{
+    width: 30%;
+}
+
+.footer-distributed h3{
+    color: #ffff;
+    margin: 0;
+}
+
+.footer-distributed h3 span{
+    color: #f87f7f;
+}
+
+.footer-distributed .footer-links{
+    color: #fff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-logo-name{
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    color: #8f9296;
+}
+
+.footer-distributed .footer-center{
+    width: 35%;
+}
+
+.footer-distributed .footer-center i{
+    background-color: #33383b;
+    color: #fff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.ri-mail-fill{
+    font-size: 17px;
+    line-height: 38px;
+}
+.footer-distributed .footer-center a{
+    color: #f87f7f;
+    font-weight: 600;
+}
+.footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span{
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a{
+    color: #f87f7f ;
+    text-decoration: none;
+}
+
+.footer-distributed .footer-right{
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+    display: block;
+    color: #ffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+display: inline-block;
+width: 35px;
+height: 35px;
+cursor: pointer;
+background-color: #33383b;
+border-radius: 2px;
+font-size: 20px;
+color: #fff;
+text-align: center;
+line-height: 35px;
+margin-right: 3px;
+margin-bottom: 5px;    
+}
+
+.footer-links a:hover{
+    color: #f79393;
+}
+
+.footer-distributed .footer-icons a:hover{
+    background-color: #df6363;
+}
+
+/* Footer End */
+/* Hacer el diseño responsive */
+@media all and (max-width: 978px){
+.team-container{
+display: grid;
+    place-items: center;
+}
+
+}
+@media (max-width: 800px) {
+    footer{
+        position: static;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+    .navbar #menu-icon{
+        display: block;
+    }
+
+    .nav-links{
+        position: absolute;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        display: flex;
+        height: 70vh;
+        text-align: center;
+        backdrop-filter: blur(8px);
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.527);
+        margin-left: 0;
+        align-items: center;
+
+    }
+
+        .mobile-menu {
+            margin-left: -100%;
+        }
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links ul li{
+        margin: 25px 0;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 880px){
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i{
+        margin-left: 0;
+    }
+}
