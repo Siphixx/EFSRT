@@ -461,27 +461,59 @@ margin-bottom: 5px;
 /* Hacer el diseño responsive */
 @media all and (max-width: 978px){
 .team-container{
-display: grid;
-    place-items: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 }
 @media (max-width: 800px) {
+    .navbar{
+        
+    }
     footer{
         position: static;
     }
+    .slide-content h2{
+        font-size: 30px;
+    }
+
+    .slide-content p{
+    display: none;
+    }
 
 }
+@media screen and (max-width: 592px){
+ 
+    .navbar .logo{
+        top: 50px;
+        left: 10px;
+        margin-left: 35px;
+        font-size: 20px;
+    }
 
+
+    .slide-content h2{
+           
+            font-size: 25px;
+        }
+
+
+    .nav-links ul{
+            margin-right: 24px;
+        
+        }
+.navbar #menu-icon{
+    right: 12;
+}
+
+}
 @media screen and (max-width: 900px){
 
-    .navbar{
-        padding: 0;
-    }
     .logo{
         position: absolute;
-        top: 50px;
-        left: 50px;
+        top: 45px;
+        left: 10px;
     }
     .navbar #menu-icon{
         display: block;
@@ -512,7 +544,8 @@ display: grid;
         align-items: center;
     }
     .nav-links ul li{
-        margin: 25px 0;
+        margin-right: 15px;
+        margin-bottom: 25px;
         font-size: 20px;
     }
 }
@@ -526,5 +559,18 @@ display: grid;
     }
     .footer-distributed .footer-center i{
         margin-left: 0;
+    }
+
+          .nav-links ul li {
+              margin-right: 18px;
+
+          }
+}
+
+
+@media screen and (max-width: 572px) {
+    .slide-content h2 {
+        margin-top: 20px;
+        font-size: 16px;
     }
 }
